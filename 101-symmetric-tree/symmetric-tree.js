@@ -10,21 +10,21 @@
  * @param {TreeNode} root
  * @return {boolean}
  */
-var isSymmetric = function(root) {
-    if(!root) {
+var isSymmetric = function (root) {
+    if (!root) {
         return true;
     }
 
     function isMirror(t1, t2) {
-        if(!t1 && !t2) {
+        if (!t1 && !t2) {
             return true;
         }
 
-        if(!t1 || !t2) {
+        if (!t1 || !t2) {
             return false;
         }
 
-        if(t1.val !== t2.val) {
+        if (t1.val !== t2.val) {
             return false;
         }
 
